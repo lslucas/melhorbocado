@@ -1,0 +1,17 @@
+{
+    "name": "TechTravel/Files",
+    "description": "Trabalhando com arquivos/imagens/etc",
+    "license": "MIT",
+    "keywords": ["files"],
+    "authors": [
+        {
+            "name": "Lucas Serafim",
+            "email": "lslucas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "lslucas\\Files\\": "src"
+        }
+    }
+}

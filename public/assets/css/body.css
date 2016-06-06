@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face 
+{
+ font-family: Century Gothic;
+ src: url("../fonts/gothic/gothic.eot") /* EOT file for IE */
+}
+@font-face 
+{
+ font-family: Century Gothic;
+ src: url("../fonts/gothic/gothic.ttf") /* TTF file for CSS3 browsers */
+}
+
+/*********************************************************************/
+
+body
+{
+	font-family:"Arial" !important;
+	font-size:12px;
+	color:#000000;
+	line-height:16px;
+	letter-spacing:0px;
+	background:#FFF;
+	overflow-x:hidden;
+}
+
+/*********************************************************************/
+
+td
+{
+	font-size:12px;
+}
+
+/*********************************************************************/
+
+a
+{
+	color:#0000FF;
+	text-decoration:none;
+}
+
+/*********************************************************************/
+
+a:hover
+{
+	color:#000;
+	text-decoration:none;
+	font-weight:bold; /* DEFAULT W3C */
+}
+
+/*********************************************************************/

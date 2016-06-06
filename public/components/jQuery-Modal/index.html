@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+
+	<title>jQuery Modal</title>
+
+
+	<link rel="stylesheet" href="css/example.css" />
+	<link rel="stylesheet" href="css/pygments.css" />
+	<link rel="stylesheet" href="css/modal.css" />
+
+	<!--
+	jQuery Modal by Matt Hinchliffe <http://www.maketea.co.uk>
+	Find out more at GitHub <http://github.com/i-like-robots/jQuery-Modal>
+	-->
+
+</head>
+<body>
+
+	<div id="container">
+
+		<section id="introduction">
+			<h1>jQuery Modal</h1>
+			<p>
+				Every front-end developer needs their own <a href="http://github.com/i-like-robots/jQuery-Modal">modal
+				window</a>. jQuery modal is performant, tested, customisable and easy to integrate. Less than 2.5KB
+				minified and 1KB gzipped.
+			</p>
+
+			<div id="example">
+				<p>
+					<button class="js-open">See an example</button>
+				</p>
+				<p id="example-content" style="display:none;">
+					Rump sausage ham short loin pork. Pig venison boudin bresaola, frankfurter sirloin filet mignon pork shankle
+					capicola. Leberkas jerky ground round short loin bacon. Capicola strip steak flank meatball pork loin beef
+					ribs turducken, biltong jowl kielbasa rump shank short ribs. Beef beef ribs filet mignon frankfurter,
+					prosciutto pork chop chicken ground round short ribs tenderloin sirloin fatback brisket.
+				</p>
+			</div>
+		</section>
+
+		<hr />
+
+		<section id="setup">
+			<h2>Setup</h2>
+			<p>
+				This isn't a copy and paste plugin, it's just an outline. The plugin is instantiated in the usual
+				manner and an instances API can be accessed via element data.
+			</p>
+
+			<figure>
+<pre class="syntax"><span class="c1">// Create a modal instance.</span>
+<span class="kd">var</span> <span class="nx">$m</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'body'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(),</span>
+
+    <span class="c1">// Access an instance API</span>
+    <span class="nx">api</span> <span class="o">=</span> <span class="nx">$m</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">'modal'</span><span class="p">);</span>
+</pre>
+			</figure>
+
+			<p>
+				You can also 'namespace' plugin instances so that multiple modals can be attached to the same parent.
+
+			</p>
+
+			<figure>
+<pre class="syntax"><span class="kd">var</span> <span class="nx">$m</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'body'</span><span class="p">);</span>
+
+<span class="c1">// Attach two modal windows to the same parent</span>
+<span class="nx">$m</span><span class="p">.</span><span class="nx">modal</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">'alpha'</span><span class="p">).</span><span class="nx">modal</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s1">'beta'</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">alpha</span> <span class="o">=</span> <span class="nx">$m</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">'modal_alpha'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">beta</span> <span class="o">=</span> <span class="nx">$m</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">'modal_beta'</span><span class="p">);</span>
+</pre>
+			</figure>
+
+			<p>
+				The simplest example is to open a modal window instance with basic HTML content:
+			</p>
+
+			<figure>
+<pre class="syntax"><span class="c1">// Open the modal with some content</span>
+<span class="nx">api</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">"&lt;p&gt;Hello, is it me you're looking for?"</span><span class="p">);</span>
+</pre>
+			</figure>
+
+			<p>
+				The API is flexible enough to do any common task such as confirmation boxes, displaying images and
+				external content.
+			</p>
+
+			<figure>
+<pre class="syntax"><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+	<span class="nx">url</span><span class="o">:</span> <span class="s1">'http://localhost/api?foo=bar'</span><span class="p">,</span>
+	<span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nx">api</span><span class="p">.</span><span class="nx">isOpen</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="nx">api</span><span class="p">.</span><span class="nx">update</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="k">else</span>
+		<span class="p">{</span>
+			<span class="nx">api</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">},</span>
+	<span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">,</span> <span class="nx">error</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">});</span>
+</pre>
+			</figure>
+
+		</section>
+
+		<hr />
+
+		<section id="options">
+			<h2>Options</h2>
+			<p>
+				Global options can be specified via the standard jQuery plugin interface.
+			</p>
+
+			<dl>
+				<dt>onopen</dt>
+				<dd>
+					Callback function to execute after modal window has opened. Default: <code>undefined</code>.
+				</dd>
+				<dt>onhide</dt>
+				<dd>
+					Callback function to execute after modal window has closed. Default: <code>undefined</code>.
+				</dd>
+				<dt>onupdate</dt>
+				<dd>
+					Callback function to execute when modal window content is changed. Default: <code>undefined</code>.
+				</dd>
+				<dt>fixed</dt>
+				<dd>
+					Use CSS <code>fixed</code> positioning for the modal window instead of <code>absolute</code>.
+					Default: <code>false</code>.
+				</dd>
+				<dt>overlay</dt>
+				<dd>
+					Create an overlay beneath the modal window and over the target. Default: <code>true</code>.
+				</dd>
+				<dt>blur</dt>
+				<dd>
+					Close the modal window when overlay is clicked. Default: <code>true</code>.
+				</dd>
+				<dt>escape</dt>
+				<dd>
+					Close the modal window when the escape key is pressed. Default: <code>true</code>.
+				</dd>
+				<dt>width</dt>
+				<dd>
+					Predefined width for modal window. Set to <code>auto</code> for the contents automatic flow width.
+					Default: <code>640</code>.
+				</dd>
+				<dt>maxWidth</dt>
+				<dd>
+					Set CSS <code>max-width</code> relative to the modal windows parent. Set to <code>none</code> to
+					set no maximum width. Default: <code>'95%'</code>.
+				</dd>
+				<dt>height</dt>
+				<dd>
+					Predefined height for modal window. Set to <code>auto</code> for the contents automatic flow height.
+					Default: <code>480</code>.
+				</dd>
+				<dt>maxHeight</dt>
+				<dd>
+					Set CSS <code>max-height</code> relative to the modal windows parent. Set to <code>none</code> to
+					set no maximum height. Default: <code>'95%'</code>.
+				</dd>
+				<dt>namespace</dt>
+				<dd>
+					Data attribute and event binding namespace. Default: <code>'modal'</code>.
+				</dd>
+			</dl>
+		</section>
+
+		<hr />
+
+		<section id="api">
+			<h2>Public methods</h2>
+			<dl>
+				<dt>.align()</dt>
+				<dd>
+					Repositions the window to the center of the modal window parent.
+				</dd>
+				<dt>.open([content][, callback])</dt>
+				<dd>
+					Opens the modal window. <var>Content</var> Passed to the <code>.update()</code> method.
+					<var>Callback</var> A function to call once the window has opened.
+				</dd>
+				<dt>.update(content[, callback])</dt>
+				<dd>
+					Updates the contents of the modal window. <var>Content</var> Set the content of the modal window
+					via jQuery's <a href="http://api.jquery.com/html/#html2">.html()</a> method. <var>Callback</var> A
+					function to call once the window has been updated. The <code>.align()</code> method will be called
+					if the window is open.
+				</dd>
+				<dt>.resize(width, height)</dt>
+				<dd>
+					Resizes the modal window content area. <var>Width</var> and <var>Height</var> can be any unit
+					compatible with the <a href="http://api.jquery.com/category/dimensions/">jQuery Dimensions</a> API.
+				</dd>
+				<dt>.hide([callback])</dt>
+				<dd>
+					Hides the modal window and removes event listeners. <var>Callback</var> A function to call once the
+					window has closed.
+				</dd>
+				<dt>A note on callbacks:</dt>
+				<dd>
+					All callbacks will be called from the scope of the modal instance, so that <code>this</code> will
+					refer to the modal instance. Callbacks provided as arguments to the public methods above will be
+					executed in addition to those specified as instance options.
+				</dd>
+			</dl>
+		</section>
+
+	</div>
+
+	<a href="http://github.com/i-like-robots/jQuery-Modal">
+		<img style="position:absolute; top:0; right:0; border:0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+	</a>
+
+	<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script src="src/modal.js"></script>
+	<script>
+		$(function()
+		{
+			// Create a modal instance.
+			var $m = $('body').modal(),
+
+			    // Access an instance API
+			    api = $m.data('modal');
+
+			// Bind a click event to copy a hidden elements content into the modal window
+			$(document).on('click', '.js-open', function()
+			{
+				api.open( document.getElementById('example-content').innerHTML );
+			});
+
+			window.$m = $m;
+		});
+	</script>
+
+</body>
+</html>

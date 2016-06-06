@@ -1,0 +1,17 @@
+{
+    "name": "Lslucas/Email",
+    "description": "Email Sender",
+    "license": "MIT",
+    "keywords": ["email"],
+    "authors": [
+        {
+            "name": "Lucas Serafim",
+            "email": "lslucas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lslucas\\Email\\": "src"
+        }
+    }
+}

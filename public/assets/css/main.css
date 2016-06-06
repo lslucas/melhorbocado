@@ -1,0 +1,211 @@
+/*
+* {
+    box-sizing: initial !important;
+    -webkit-box-sizing: initial !important;
+    -moz-box-sizing: initial;
+}
+*/
+body {
+    font-size:9pt;
+}
+/*
+div#searchBackground div#searchHome input[type=text]
+ {
+	width: 390px;
+	padding-left: 300px;
+ }
+div#searchBackground div#searchHome select[name='imovel']
+{
+    margin-left:133px;
+}
+*/
+div#searchBackground #searchHome input[type=text]:focus, div#searchBackground #searchHome input[type=text]:hover
+{
+    background-color: whitesmoke;
+}
+/*
+div#searchBackground div#searchHome select
+{
+position: absolute;
+}
+*/
+div#searchBackground #searchHome input[type='text'],select
+{
+    font-size:11pt;
+    background-color:white;
+}
+#searchHome button {
+    font-size: 16pt;
+}
+
+div.modal-wrapper { position: absolute; top: 10%; left: 50%; margin-left: -170px; width: 350px; height: auto; overflow: hidden; z-index: 5001; background: rgb(255, 255, 255); }
+div.modal-wrapper div.modal-header h3 { padding-top: 10px; padding-bottom: 10px; width: 100%; text-align: center; text-transform: uppercase; color: rgb(255, 255, 255); background: rgb(15, 136, 193); }
+div.modal-wrapper h4 { margin: 5px auto auto; padding: 10px 6px 10px; width: 100%; height: 53px; text-align: center; text-transform: uppercase; color: rgb(102, 102, 102); font-size: 26px; background: url(/img/iconf.jpg) left 5px top 0% no-repeat; }
+div.modal-wrapper input, textarea { display: block; margin: auto auto 5px; padding: 5px; width: 93%; font-family: Arial; font-size: 12px; color: rgb(102, 102, 102); border: 1px solid rgb(204, 204, 204); }
+div.modal-wrapper textarea { margin-top: 5px; resize: none; height: 50px; }
+div.modal-wrapper input[type="checkbox"] { display: inherit; margin-top: 5px; margin-left: 5px; vertical-align: middle; border: 1px solid rgb(0, 0, 0); padding: 0px !important; width: auto !important; }
+div.modal-wrapper input[type="submit"] { margin-top: 10px; padding: 8px; text-transform: uppercase; color: rgb(255, 255, 255); cursor: pointer; font-size: 40px; background: rgb(16, 136, 196); }
+div.modal-wrapper input[type="submit"]:hover { background: rgb(0, 102, 255); }
+div.modal-wrapper p { font-size: 11px; color: rgb(102, 102, 102); }
+div.modal-wrapper label { font-size: 12px; }
+
+div.boxImovel {
+    overflow: hidden;
+    padding-right:0;
+    height: auto;
+}
+div#topItensSearch div#searchAdvanced ul.menuOptions li {
+    background: none;
+}
+div#topItensSearch div#searchAdvanced ul.menuOptions li.seta {
+    background-image: url(/assets/images/busca-avancada-seta.png); background-position: right 8px top 16px; background-repeat: no-repeat;
+}
+/*#searchAdvanced input[type='text'] {
+    width: 122px;
+    text-align:center;
+    height: 20px;
+    border:0;
+}
+#searchAdvanced input[type='text']#garagem {
+    width: 125px;
+}
+*/
+.form-control.selectize-control {
+    padding-top:5px;
+}
+.popover {
+    width: 180px;
+}
+.popover input[type='text'] {
+    width: 85px;
+    height: 20px;
+}
+.selectize-input {
+    width: 320px;
+    height: 20px !important;
+    min-height: auto;
+}
+.selectize-control.multi .selectize-input.has-items {
+    padding: 3px;
+    padding-left: 10px;
+}
+div#topItensSearch div#searchAdvanced div#searchItensAdvanced p.searchText input[type="text"] {
+    background: white;
+    border: 1px solid #cccccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+div#topItensSearch div#searchAdvanced div#searchItensAdvanced p.searchText input[type="submit"] {
+    margin-left: -4px;
+    padding-left: 11px;
+    padding-right: 11px;
+    height: 32px;
+    cursor: pointer;
+    border: 1px solid rgb(170, 170, 170);
+    background: rgb(170, 170, 170);
+}
+p.textCodImovel input[type="submit"] {
+    color: rgb(255, 255, 255);
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+div#topItensSearch div#searchAdvanced div#searchItensAdvanced {
+    padding-top:10px;
+}
+
+div.infoBox {
+    margin: 0px 0px 0px 5px;
+    padding: 10px;
+    padding-top:0;
+    float: left;
+    width: 385px;
+    border: 0;
+}
+div.infoBox p#valor {
+    font-size: 15pt !important;
+}
+.imgImovelPrincial {
+    width: auto;
+    height: auto;
+    max-width: 332px;
+}
+#contato {
+    background-color: #EDEDED;
+}
+#contato #head{
+    padding:10px;
+}
+#contato #head #phone {
+    font-size:12pt;
+}
+#contato form {
+    background-color:#E2E2E2;
+    padding:10px;
+}
+#contato form input {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+div.contentBlank div.slideVertical {
+    height: auto;
+}
+
+div.contentBlank {
+    width: 97%;
+    padding: 15px;
+}
+div.contentImovel {
+    width: 100%;
+    padding-right:0;
+}
+
+.modal-close {
+    color: #0D88C0;
+    font-size:14pt;
+}
+div#slide2 div.box p strong.boxTitle {
+    font-size:12px;
+}
+
+div#searchBackgroundInterna { position: relative; margin-top: -19px; width: 100%; min-height: 120px; background: url(/img/searchBox/rio1.jpg) no-repeat; padding-top:50px; padding-bottom:20px; }
+div#searchBackgroundInterna div#searchHome input[type='text'], select { font-size: 12pt; }
+div#map { height: 250px; width: 1156px; }
+
+.split-list ul{
+  float: left;
+  margin-left: 1em;
+}
+.split-list li{
+  padding-right: 2em;
+  line-height: 1.5em;
+}
+
+div#slide2 {
+    margin-bottom: 20px;
+    display:table;
+    height: 340px;
+}
+
+div#slide2 div.box {
+    height: 100%;
+    display: table-cell;
+}
+.item-list {
+    margin-bottom: 20px !important;
+}
+
+.interna-imovel { margin-top: 10px; }
+.lSSlideOuter.vertical .lSAction > .lSNext { bottom:30px; }
+
+.infoVerticalStatusImovel p { margin:0; }
+div.contentBlank div.infoVerticalItens p { height: auto }
+
+.wellcome a { color: rgb(102, 102, 102); font-size: 12pt; text-decoration: underline; }
+.lSPager.lSGallery li { width: auto !important; max-width: 66px; max-height: 45px; overflow: hidden !important; }
+.lSSlideOuter .lSPager.lSGallery img { max-height: 100%; max-width: auto; margin-left: auto; margin-right:auto; }

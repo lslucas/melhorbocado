@@ -1,0 +1,21 @@
+{
+    "name": "Lslucas/PDF",
+    "description": "PDF Conversor",
+    "license": "MIT",
+    "keywords": ["pdf"],
+    "authors": [
+        {
+            "name": "Lucas Serafim",
+            "email": "lslucas@gmail.com"
+        }
+    ],
+    "require": {
+        "phenx/php-font-lib": "0.2.*",
+        "dompdf/dompdf": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lslucas\\PDF\\": "src"
+        }
+    }
+}

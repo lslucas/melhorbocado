@@ -1,0 +1,442 @@
+div#formCorretor { position: absolute; top: 10%; left: 50%; margin-left: -170px; width: 350px; height: 430px; overflow: hidden; z-index: 5001; background: rgb(255, 255, 255); }
+
+div#formCorretor div { padding-top: 10px; padding-bottom: 10px; width: 100%; text-align: center; text-transform: uppercase; color: rgb(255, 255, 255); background: rgb(15, 136, 193); }
+
+div#formCorretor h4 { margin: 5px auto auto; padding: 15px 6px 10px; width: 100%; height: 20px; text-align: center; text-transform: uppercase; color: rgb(102, 102, 102); font-size: 26px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(204, 204, 204); background: url(/img/iconf.jpg) left 5px top 0% no-repeat; }
+
+div#formCorretor input, textarea { display: block; margin: auto auto 5px; padding: 5px; width: 93%; font-family: Arial; font-size: 12px; color: rgb(102, 102, 102); border: 1px solid rgb(204, 204, 204); }
+
+div#formCorretor textarea { margin-top: 5px; resize: none; height: 50px; }
+
+div#formCorretor input[type="checkbox"] { display: inherit; margin-top: 5px; margin-left: 5px; vertical-align: middle; border: 1px solid rgb(0, 0, 0); padding: 0px !important; width: auto !important; }
+
+div#formCorretor input[type="submit"] { margin-top: 10px; padding: 8px; text-transform: uppercase; color: rgb(255, 255, 255); cursor: pointer; font-size: 40px; background: rgb(16, 136, 196); }
+
+div#formCorretor input[type="submit"]:hover { background: rgb(0, 102, 255); }
+
+div#formCorretor p { font-size: 11px; color: rgb(102, 102, 102); }
+
+div#formCorretor label { font-size: 12px; }
+
+div#overflow { position: fixed; width: 100%; height: 100%; z-index: 5000; opacity: 0.85; background: rgb(29, 52, 66); }
+
+div#topBackground
+{
+	position:absolute;
+	width:100%;
+	height:63px;
+	background:#0099cc;
+	z-index:1;
+}
+
+/*********************************************************************/
+
+
+div#topBackground hr
+{
+	position:absolute;
+	width:100%;
+	bottom:5px;
+	border:2px solid #FFF;
+}
+
+div#master { position: relative; margin: auto; width: 1219px; height: auto; border: 0px solid rgb(255, 0, 0); z-index: 2; }
+
+/*div#topLogoMenu { position: relative; width: 100%; height: 62px; z-index: 2; background-color: #0099cc; margin-bottom: 25px; }*/
+
+.navbar-vivonorio { background-color: #0099cc; margin-bottom: 25px; border: 0; color:white; }
+
+.navbar-vivonorio .navbar-brand { position:absolute; height:auto; padding:0; z-index:999;}
+
+.navbar-vivonorio button { font-size: 26pt; color: white; padding:0; }
+
+.navbar-vivonorio hr { position: absolute; width: 82%; bottom: 24px; right: 0px; border: 2px solid rgb(255, 255, 255); }
+
+.navbar-vivonorio img { margin-top: 5px; margin-left: 5px; height:80px; clear:all; }
+
+.navbar-vivonorio ul { float:right; padding-left: 188px; }
+
+.navbar-vivonorio ul li { display: table; font-family: 'Century Gothic'; font-size: 12pt; color: rgb(255, 255, 255); /*padding-top: 20px; padding-left: 9px; padding-right: 8px; height: 42px;*/ }
+
+.navbar-vivonorio ul li a { color: rgb(255, 255, 255); }
+
+.navbar-vivonorio ul li a:hover { background: rgb(14, 117, 167); font-weight: inherit; color: rgb(255, 255, 255); }
+
+.navbar-vivonorio-white { background-color: white; margin-bottom: 25px; border: 1px solid lightgray; color:#0099cc; }
+.navbar-vivonorio-white ul li a { color: #0099cc; }
+.navbar-vivonorio-white .navbar-brand img { height: 45px; }
+
+div#searchBackground { position: relative; margin-top: -19px; width: 100%; height: 611px; background: url(/img/bghome.jpg) no-repeat; }
+
+#searchBackground form[name='search'] { padding-top: 200px; }
+
+#searchHome { display:table; background: white; }
+
+#searchHome .form-control { width: auto; }
+
+#searchHome select, #searchHome input[type="text"] { cursor: pointer; border:0; box-shadow:none; color:darkgray; }
+
+#searchHome button[type="submit"] { cursor: pointer; color: rgb(255, 255, 255); background: rgb(17, 144, 205); }
+
+#searchHome button[type="submit"]:hover, #searchHome select:hover { background: rgb(0, 102, 204); }
+
+#searchHome select:hover { background: rgb(247, 247, 247); }
+
+#searchHome input, select, button { padding-left: 25px; padding-right: 25px; font-family: Arial; font-size: 11pt; font-weight: 100; letter-spacing: 1px; text-transform: capitalize; border: 0; }
+
+#searchHome .btn { border-radius: 0; border: 3px solid transparent;}
+
+div#searchBackground div.overWellCome { /*position: absolute; top: 0px; left: 0px;*/ margin-top:175px; width: 380; height: 190px; overflow: hidden; }
+
+div#searchBackground div.wellcome { /*position: absolute; bottom: -220px; left: 50%; margin-left: -190px;*/ width: 380px; height: 380px; overflow: hidden; text-align: center; font-size: 22px; font-weight: 600; color: rgb(132, 163, 45); font-family: 'Arial Black'; opacity: 0.85; letter-spacing: -1px; border-radius: 200px; background: rgb(255, 255, 255); }
+
+div#searchBackground div.wellcome strong { font-size: 12px; color: rgb(51, 51, 51); letter-spacing: 1px; }
+
+div#searchBackground div.wellcome hr { margin: 15px auto; width: 20%; border: 1px solid rgb(132, 163, 45); }
+
+div.line2 { position: absolute; top: 665px; left: 0px; margin-top: 20px; margin-bottom: 20px; width: 100%; height: 5px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); z-index: 5; }
+
+div#middle { width: 100%; height: auto; border: 0px solid rgb(255, 0, 0); }
+
+div#middle h3 { display: block; width: 100%; padding: 8px; font-family: Arial; text-transform: uppercase; text-align: center; letter-spacing: 3px; font-size: 31pt; font-weight: 100; }
+
+div#middle h4 { display: block; width: 100%; margin-top: 10px; margin-bottom: 10px; padding: 8px; font-family: Arial; text-transform: uppercase; text-align: center; letter-spacing: 0px; font-size: 20pt; font-weight: 200; }
+
+div#slide1 { position: relative; margin: auto; width: 1000px; height: 451px; border: 0px solid rgb(0, 0, 0); }
+/*
+div.lancamentos_destaque {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+}
+*/
+div.lancamentos_destaque div.col {
+	/*margin-right:25px;*/
+	font-size: 11px;
+	/*border: 1px solid rgb(204, 204, 204);*/
+	text-align: center;
+}
+
+div.lancamentos_destaque img {
+	width: 252px;
+	height: 252px;
+}
+div.melhores_ofertas img {
+	height: 170px;
+}
+
+div.lancamentos_destaque div.col div.boxImage { margin: 8px auto auto; width: 250px; height: 250px; border-radius: 200px; }
+
+div.lancamentos_destaque div.col p { display: block; margin-top: 20px; text-align: center; line-height: 24px; }
+
+div.lancamentos_destaque div.col p strong { /*font-family: 'Arial Black';*/ font-size: 1.5em; color: rgb(132, 163, 45); }
+
+div.lancamentos_destaque div.col p strong.nIM { font-family: Arial; font-size: 1.3em; color: rgb(132, 163, 45); }
+
+div.lancamentos_destaque div.col span { font-size: 1.2em; }
+
+div.lancamentos_destaque div.col p span b { /*font-family: 'Arial Black';*/ color: rgb(47, 47, 47); }
+
+div.lancamentos_destaque div.col p strong.boxTitle { font-family: Arial; font-size: 1.3em; color: rgb(51, 51, 51); }
+
+div.lancamentos_destaque div.col p strong.colorBlue { font-family: Arial; font-size: 1.5em; font-weight: 100; font-style: italic; color: rgb(0, 140, 212); }
+
+div.lancamentos_destaque img.st1 { position: absolute; top: 150px; left: -65px; cursor: pointer; }
+
+div.lancamentos_destaque img.st1:hover, img.st2:hover { opacity: 0.7; }
+
+div.lancamentos_destaque img.st2 { position: absolute; top: 150px; right: -65px; cursor: pointer; }
+
+div#slide2 div.box { float: left; margin-right: 25px; width: 229px; height: 323px; font-size: 11px; border: 1px solid rgb(204, 204, 204); }
+
+div#slide2 div.box div.boxImage { margin: 0px auto auto; width: 100%; height: 170px; border: 0px solid rgb(0, 0, 0); }
+
+div#slide2 div.box p { display: block; margin-top: 20px; text-align: center; line-height: 20px; }
+
+div#slide2 div.box p strong { font-family: 'Arial Black'; font-size: 20px; font-weight: bold; color: rgb(132, 163, 45); }
+
+div#slide2 div.box p strong.nIM { font-family: Arial; font-size: 17px; font-weight: bold; color: rgb(132, 163, 45); }
+
+div#slide2 div.box p span { font-size: 14px; }
+
+div#slide2 div.box p span b { font-family: 'Arial Black'; color: rgb(51, 51, 51); }
+
+div#slide2 div.box p strong.boxTitle { font-family: Arial; font-size: 16px; color: rgb(102, 102, 102); }
+
+div#slide2 div.box p strong.colorBlue { font-family: Arial; font-weight: 100; font-size: 17px; font-style: italic; color: rgb(0, 140, 212); }
+
+div#slide2 img.st1 { position: absolute; top: 150px; left: -28px; cursor: pointer; }
+
+div#slide2 img.st1:hover, img.st2:hover { opacity: 0.7; }
+
+div#slide2 img.st2 { position: absolute; top: 150px; right: -25px; cursor: pointer; }
+
+div#rodape { padding-top: 20px; background: rgb(17, 144, 205); }
+
+div#rodape div.mRodape strong { color: rgb(255, 255, 255); font-size: 14px; }
+
+div#rodape div.mRodape div { text-align:left; }
+
+div#rodape div.mRodape div { padding-left:30px; }
+
+div#rodape div.mRodape div.social ul { margin-right:30px; }
+
+div#rodape div.mRodape div.social ul li { position: relative; display: table; float: right; margin-top: -20px; margin-right: 5px; padding-left: 18px; padding-right: 18px; height: 160px; cursor: pointer; background: rgb(1, 123, 182); }
+
+div#rodape div.mRodape div.social ul li:hover { opacity: 0.8; }
+
+div#rodape div.mRodape div.social ul li img { position: absolute; top: 35%; left: 2px; width: 33px; height: 33px; }
+
+div#rodape div.mRodape div.colsLinksFooter { margin-left: 20px; width: auto; min-width: 190px; float: left; border: 0px solid rgb(255, 255, 0); }
+
+div#rodape div.mRodape div.colsLinksFooter_CENTER { text-align: center; color: rgb(255, 255, 255); line-height: 22px; }
+div#rodape div.mRodape div.colsLinksFooter_CENTER a { color: rgb(255, 255, 255); }
+div#rodape div.mRodape div.colsLinksFooter_LEFT { color: rgb(255, 255, 255); line-height: 22px; }
+div#rodape div.mRodape div.colsLinksFooter_LEFT a { color: rgb(255, 255, 255); }
+
+div#rodape div.mRodape ul { list-style: none; }
+
+div#rodape div.mRodape ul li a { font-size: 11px; color: rgb(255, 255, 255); }
+
+a.aLinkBG { padding: 5px; color: rgb(17, 144, 205) !important; background: rgb(255, 255, 255); }
+
+div.topItensSearch {
+	margin-top:40px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.topItensSearch div.boxTotalItensN {
+    margin-bottom:20px;
+}
+
+div.topItensSearch .boxTotalItensN { padding-top: 25px; line-height: 30px; font-size: 12pt; text-align: center; text-transform: uppercase; color: rgb(255, 255, 255); border: 0px solid rgb(0, 0, 0); background: rgb(17, 144, 205);}
+
+div.topItensSearch .boxTotalItensN span { font-size: 22pt; }
+
+div.topItensSearch div#controlSearchItens { position: relative; float: left; margin-left: 8px; width: 671px; height: 152px; border: 0px solid rgb(255, 0, 0); }
+
+div.topItensSearch div#searchAdvanced { margin-left: 8px; border: 0px solid rgb(255, 0, 0); }
+
+div.topItensSearch div#searchAdvanced div.itensAdvanced span { display: block; margin: auto; padding-top: 25px; width: 340px; text-align: center; font-size: 16px; clear: both; cursor: pointer; border: 0px solid rgb(0, 0, 0); background: url(/img/seta.png) right 0px top 80% no-repeat; }
+
+div.topItensSearch div#searchAdvanced div.itensAdvanced span:hover { opacity: 0.7; }
+
+div.topItensSearch div#searchAdvanced div#searchItensAdvanced p.searchText { float: left; width: auto; margin-right: 20px; border: 0px solid rgb(0, 0, 0); }
+
+div.topItensSearch div#searchAdvanced div#searchItensAdvanced p.searchCheck { display: inline-table; float: left; padding-top: 11px; }
+
+div.topItensSearch div#searchAdvanced div#searchItensAdvanced p.searchCheck input[type="checkbox"] { margin-right: 10px; display: inline-table; vertical-align: middle; width: 14px; height: 15px; }
+
+p.textCodImovel input[type="text"] { width: 50px !important; }
+
+p.textCodImovel input[type="button"] { color: rgb(255, 255, 255); padding-left: 5px !important; padding-right: 5px !important; }
+
+div.topItensSearch div#searchAdvanced div#searchItensAdvanced p.searchText input[type="text"] { padding-left: 8px; padding-right: 8px; width: 294px; height: 24px; border: 1px solid rgb(170, 170, 170); background: rgb(205, 205, 205); }
+
+div.topItensSearch div#searchAdvanced div#searchItensAdvanced p.searchText input[type="text"]:focus { background: rgb(255, 255, 255); }
+
+div.topItensSearch div#searchAdvanced p.searchText input[name='regiao'] { width: 130px !important; height: 32px !important; text-align:left; }
+
+div.topItensSearch div#searchAdvanced p.searchText input[name='codigo'] { height: 32px !important; }
+
+div.topItensSearch div#searchAdvanced p.searchText select[name='imovel'] { height: 34px; font-size: 12px; font-weight: normal; }
+
+div.topItensSearch div#searchAdvanced div#searchItensAdvanced p.searchText input[type="button"] { margin-left: -4px; padding-left: 11px; padding-right: 11px; height: 34px; cursor: pointer; border: 1px solid rgb(170, 170, 170); background: rgb(170, 170, 170); }
+
+div.topItensSearch div#searchAdvanced div#searchItensAdvanced p.searchText input[type="button"]:hover { background: rgb(204, 204, 204); }
+
+.textCodImovel { margin-right:0 !important; }
+
+div.topItensSearch div#searchAdvanced div#searchItensAdvanced { border-width: 0px 0px 1px; border-style: solid; border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(200, 200, 200); font-family: Arial; color: rgb(98, 98, 98); background: linear-gradient(rgb(183, 183, 183) 0%, rgb(212, 212, 212) 45%, rgb(255, 255, 255) 100%); }
+
+div.topItensSearch div#searchAdvanced div#searchItensAdvanced div.itensAdvanced { margin: auto; padding-top: 12px; height: auto; border: 0px solid rgb(0, 0, 0); }
+
+div.topItensSearch div#searchAdvanced ul.menuOptions { display: block; overflow: hidden; border-top-width: 7px; border-top-style: solid; border-top-color: rgb(204, 204, 204); }
+
+div.topItensSearch div#searchAdvanced ul.menuOptions li { display: block; float: left; padding: 12px 22px; font-family: Arial; font-size: 12px; text-transform: uppercase; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(102, 102, 102); border-right-width: 1px; border-right-style: solid; border-right-color: rgb(166, 166, 166); background-image: url(/img/busca-avancada-seta.png); background-position: right 8px top 16px; background-repeat: no-repeat; }
+
+div.topItensSearch div#searchAdvanced ul.menuOptions li:hover { background: rgb(243, 254, 242); }
+
+div.topItensSearch div#searchAdvanced ul.menuOptions li a { color: rgb(166, 166, 166); }
+
+div.topItensSearch div#searchAdvanced ul.menuOptions li a:hover { color: rgb(51, 51, 51); font-weight: normal; }
+
+div.topItensSearch div#searchAdvanced ul.menuOptions li:last-child { border-right-width: 0px; border-right-style: solid; border-right-color: rgb(0, 0, 0); }
+
+div.topItensSearch div#controlSearchItens img { float: left; }
+
+div.topItensSearch div#controlSearchItens p.btDefaultItens { float: left; margin-right: 7px; padding-top: 27px; width: 296px; height: 40px; font-size: 16px; font-family: Arial; text-align: center; text-transform: uppercase; cursor: pointer; background: rgb(204, 204, 204); }
+
+div.topItensSearch div#controlSearchItens p.btDefaultItens:hover { background: rgb(228, 228, 228); }
+
+.relevancia { width: 364px !important; margin-right: 0px !important; }
+
+div.topItensSearch div#controlSearchItens p.buscaAvancada { position: relative; display: block; margin-top: 70px; padding-top: 28px; clear: both; width: 666px; height: 43px; font-size: 16px; text-align: center; text-transform: uppercase; border: 1px solid rgb(204, 204, 204); cursor: pointer; background-image: linear-gradient(rgb(237, 237, 237), rgb(255, 255, 255)); }
+
+div.topItensSearch div#controlSearchItens p.buscaAvancada span { display: block; position: absolute; top: 29px; right: 215px; width: 24px; height: 10px; background: url(/img/seta.png) no-repeat; }
+
+div.topItensSearch div#controlSearchItens p.relevancia span { display: block; position: absolute; top: 22px; right: 100px; padding: 7px; width: 10px; height: 12px; background: url(/img/seta.png) 50% 50% no-repeat rgb(175, 175, 175); }
+
+div.topItensSearch div#controlSearchItens p.buscaAvancada:hover { background-image: linear-gradient(rgb(204, 204, 204), rgb(255, 255, 255)); }
+
+.listaImovel img {
+	max-width:220px;
+	max-height:120px;
+}
+
+div.boxImovel { background-color:white; border: 1px solid rgb(199, 199, 199); margin-bottom:20px;}
+
+div.boxImovel span.etiqueta { padding: 3px 60px 3px 23px; font-size: 1.2em; width: auto; color: rgb(255, 255, 255); background: rgb(17, 144, 205); }
+
+div.listaImovel span.etiqueta { margin-left:-15px;}
+
+div.boxImovel p { display: block; float: left; padding-top: 35px; padding-left: 20px; width: 220px; font-size: 10pt; line-height: 22px; border: 0px solid rgb(0, 0, 0); font-family: Arial !important; }
+
+div.boxImovel div.contentBlank { /*position: relative; float: right;*/ margin-top: 27px; /*width: 969px; height: 200px; border: 0px solid rgb(0, 0, 0);*/ }
+
+div.boxImovel div p.slideAnuncio { position: relative; padding-left: 27px; padding-right: 27px; float: left; width: 710px; height: 170px; border: 0px solid rgb(0, 0, 0); }
+
+div.boxImovel div p.slideAnuncio span.SLleft { position: absolute; top: 50%; left: 0px; margin-top: -27px; width: 28px; height: 56px; cursor: pointer; border: 0px solid rgb(0, 0, 0); background: url(/img/btSlideInternoLEFT.png) no-repeat; }
+
+div.boxImovel div p.slideAnuncio span.SRright { position: absolute; top: 50%; right: 5px; margin-top: -27px; width: 28px; height: 56px; cursor: pointer; border: 0px solid rgb(0, 0, 0); background: url(/img/btSlideInternoRIGHT.png) no-repeat; }
+
+div.boxImovel div p.slideAnuncio span.SRright:hover, span.SLleft:hover { opacity: 0.8; }
+
+div.boxImovel div p.slideAnuncio span.boxIMG { position: relative; display: block; margin-top: -33px; width: 707px; height: 199px; border: 0px solid rgb(0, 0, 0); }
+
+div.boxImovel div p.slideAnuncio span.boxIMG img { float: left; max-width: 223px; max-height: 160px; cursor: pointer; border: 6px solid transparent; box-shadow: rgb(0, 204, 204) 0px 0px 0px inset, rgb(0, 204, 204) 0px 0px 0px, rgb(255, 255, 255) -999px 0px 0px inset; background: -webkit-linear-gradient(-60deg, rgb(238, 238, 238), rgb(102, 102, 102)) border-box; }
+
+div.boxImovel div p.slideAnuncio span.boxIMG img:hover { opacity: 0.85; }
+
+div.boxImovel div .boxContact strong { display: block; margin: 20px auto auto; width: 110px; font-size: 1.2em; font-family: 'Arial Black', Gadget, sans-serif; }
+
+.anunciante { font-size: 11px; }
+
+div.boxImovel div .boxContact { background: rgb(232, 232, 232); text-align:center; padding-top:20px; padding-right:25px; }
+
+div.boxImovel div .boxContact .escolhasBT:hover, span.contactBT:hover { opacity: 0.85; }
+
+div.boxImovel div .boxContact .contactBT { display: inline-block; width: 100%; padding: 2px 2px 2px 20px; text-align: center; color: rgb(255, 255, 255); cursor: pointer; background: url(/img/estrela.png) 6px 50% no-repeat rgb(102, 102, 102); }
+
+div.boxImovel div .boxContact .escolhasBT { display: inline-block; width: 130px; padding: 2px 2px 2px 20px; text-align: center; color: rgb(255, 255, 255); cursor: pointer; background: url(/img/vok.png) 6px 50% no-repeat rgb(102, 102, 102); }
+
+div.boxImovel div .boxContact .contactICONS { display: inline-block; /*margin: -15px auto 30px 12px;*/ padding-left: 43px; width: 100px; font-size: 14px; border: 0px solid rgb(0, 0, 0); background: url(/img/iconsContact.png) 1px 50% no-repeat; }
+
+.valor { display: block; margin-bottom: 18px; font-size: 22px; font-weight: bold; color: rgb(102, 102, 102); font-family: 'Arial Black'; }
+
+.regiao { display: block; margin-bottom: 23px; font-size: 12pt; color: rgb(102, 102, 102); font-family: Arial; font-weight: 100; }
+
+.iconHO { display: block; padding-top: 26px; padding-bottom: 5px; padding-left: 25px; background: url(/img/ho.png) 0% 25px no-repeat; }
+
+.iconLC { display: block; font-size: 11px; padding-left: 20px; color: rgb(153, 153, 153); width: auto; background: url(/img/lc.png) 0% 50% no-repeat; }
+
+/*div.contentBlank { float: left !important; margin: auto !important; width: 98% !important; height: auto !important; padding-top: 25px !important; padding-left: 10px !important; padding-right: 0px !important; border: 0px solid rgb(0, 0, 0) !important; }*/
+
+p { padding: inherit !important; float: none !important; width: auto !important; height: auto !important; font-family: Arial !important; font-size: 12px !important; }
+
+img.imgImovelPrincial { float: left; }
+
+div#contato { margin-top: 0px; }
+
+div.infoVerticalStatusImovel { margin: 0px 0px 0px 5px; float: left; width: 200px; }
+
+div.infoVerticalStatusImovel p { display: block; font-weight: bold; color: rgb(102, 102, 102); padding-left: 65px !important; padding-top: 45px !important; background: url(/img/linhaTempo.png) no-repeat; height: 70px !important; margin-left:-50px;}
+
+div.infoVerticalStatusImovel p.StatusRed { background: url(/img/linhaTempoRed.png) no-repeat !important; height: 80px !important; }
+
+div.infoVerticalItens { margin: 0px 0px 0px 5px; }
+
+div.infoVerticalItens p { display: block; width: 100%; color: rgb(102, 102, 102); border: 1px solid rgb(204, 204, 204); padding-top: 5px !important; padding-left: 5px !important; height: 97px; }
+
+div.infoVerticalItens p b { font-size: 1.3em; }
+/*
+div.contentBlank div.slideVertical { margin: 0px 0px 0px 5px; float: left; width: 97px; height: 415px; overflow: hidden; border: 0px solid rgb(0, 0, 0); }
+
+div.contentBlank div.slideVertical img { width: 100%; height: 73px; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: rgb(204, 204, 204); }
+
+div.contentBlank div.slideVertical span.up { position: absolute; display: block; top: 2px; left: 2px; width: 92px; height: 19px; background: url(/img/slideInternoSrta.png) no-repeat; }
+
+div.contentBlank div.slideVertical span.down { position: absolute; display: none; bottom: 2px; left: 2px; width: 92px; height: 19px; background: url(/img/slideInternoSrtaD.png) no-repeat; }
+*/
+.forceH { display: inline-table !important; height: auto !important; }
+
+.searchAdvancedBG { background: rgb(165, 202, 68) !important; }
+
+.forceFLOAT_R { float: right !important; }
+
+.forceFLOAT_L { float: left !important; }
+
+.marginMinBanner { margin-right: 9px; }
+
+.fieldCaracteristicas .selectize-input {
+    width: 170px;
+	height: 32px !important;
+}
+
+fieldset#partners {
+	border: 1px solid rgb(204, 204, 204);
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+fieldset#partners legend {
+	background-color: white;
+	text-transform: uppercase;
+	border-left:1px solid white;
+	border-right:1px solid white;
+	border-top:0;
+	border-bottom:1px solid rgb(204, 204, 204);
+	color: rgb(204, 204, 204);
+	font-size: 10pt;
+}
+#partners {
+	text-align: center;
+}
+#partners img {
+	display: inline-block;
+	padding: 20px;
+	max-width: 140px;
+}
+
+/** If less than 760px **/
+@media (max-width:760px) {
+	.overWellCome { display:none; }
+	/*
+	div#contato { padding-right:15px; }
+	div.infoVerticalItens { padding-right:15px; }
+	.galeria { padding-right:15px;}
+	*/
+}
+
+/** If less than 767px **/
+@media (max-width:767px) {
+	#searchHome .btn { width: 100%; border:0; padding: 0; padding-top: 5px; padding-bottom:5px; }
+    div.topItensSearch div#searchAdvanced { margin-left: 0; }
+}
+
+/** If MORE than 767px **/
+@media (min-width:768px) {
+	.listaImovel {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display:         flex;
+	}
+    div.topItensSearch {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+    }
+    div.topItensSearch div.boxTotalItensN {
+        margin-bottom:0;
+    }
+    div.boxFiltroAvancado {
+        margin-left:0;
+        margin-right:0;
+}
+.clear { clear: both; }

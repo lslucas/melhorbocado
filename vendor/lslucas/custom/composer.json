@@ -1,0 +1,17 @@
+{
+    "name": "lslucas/Custom",
+    "description": "Classes e métodos específicos a esse projeto",
+    "license": "MIT",
+    "keywords": ["files"],
+    "authors": [
+        {
+            "name": "Lucas Serafim",
+            "email": "lslucas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "lslucas\\Custom\\": "src"
+        }
+    }
+}

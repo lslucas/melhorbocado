@@ -1,0 +1,17 @@
+{
+    "name": "lslucas/Helpers",
+    "description": "Trabalhando com strings, ints, floats, etc",
+    "license": "MIT",
+    "keywords": ["files"],
+    "authors": [
+        {
+            "name": "Lucas Serafim",
+            "email": "lslucas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "lslucas\\Helpers\\": "src"
+        }
+    }
+}
